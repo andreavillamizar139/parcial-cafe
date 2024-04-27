@@ -1,27 +1,41 @@
 
-<div class="grid text-center" style="--bs-columns: 10; --bs-gap: 1rem;">
-  <h1 class="text-shadow">El aroma mágico</h1>
-  <hr>
-  <img src="../../../assets/cafe.png" class="img-fluid" alt="Responsive image">
-  <div class="g-col-6">
-    <table class="table">
-      <thead>
-        <tr class="table-dark">
-          <th scope="col">#</th>
-          <th scope="col">Nombre</th>
-          <th scope="col">Tipo</th>
-          <th scope="col">Región</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let cafe of cafes">
-          <th scope="row">{{cafe.id}}</th>
-          <td>{{cafe.nombre}}</td>
-          <td>{{cafe.tipo}}</td>
-          <td>{{cafe.region}}</td>
-        </tr>
-        
-      </tbody>
-    </table>
+
+<div class="container">
+
+  <div class="grid" >
+    <h1 class="style-h1 pt-4">El aroma mágico</h1>
+    <hr>
+    <div class="col p-0">
+      <img src="../../../assets/img/cafe.png" class="img-fluid fullscreen-image" alt="Responsive image">
+    </div>
+    <hr>
+    <div class="col-8">
+      <table class="table">
+        <thead>
+          <tr class="table-dark">
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Región</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cafe of cafes">
+            <th scope="row">{{cafe.id}}</th>
+            <td>{{cafe.nombre}}</td>
+            <td>{{cafe.tipo}}</td>
+            <td>{{cafe.region}}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
   </div>
+
+  <footer class="py-4">
+    <div class="container text-center">
+      <span>Contact us: +57 3102105253 - info&commat;elaromamagico.com - &commat;elaromamagico </span>
+    </div>
+  </footer>
+
 </div>

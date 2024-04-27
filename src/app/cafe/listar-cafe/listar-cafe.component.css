@@ -1,0 +1,18 @@
+.fullscreen-image {
+    object-fit: cover;
+    width: 100vw;
+}
+
+@font-face {
+    font-family: 'Kalam';
+    src: url('../../../assets/fonts/Kalam-Bold.woff') format('woff');  /* Ruta al archivo WOFF */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.style-h1 {
+    font-family: 'Kalam', sans-serif; /* Cambia el tipo de letra según tu preferencia */
+    font-size: 2em; /* Cambia el tamaño de la fuente según tu preferencia */
+    font-weight: bold; /* Opcional: cambia el peso de la fuente */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
